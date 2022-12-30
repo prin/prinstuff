@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="th">
+<head>
+	<meta charset="utf-8">
+    <title>เว็บรวบรวมบทความของปริญ | Prin's Stuff</title>
+    <meta name="description" content="เก็บรวบรวมบทความต่างๆ ที่น่าสนใจ">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="/favicon.3a9c52a76177e8a9bb81.png" />
+
+    <link rel="preload stylesheet" href="/index.css" as="style" type="text/css" crossorigin="anonymous">
+    <link rel="preload stylesheet" media="(max-width: 639px)" href="/mobile.css" as="style" type="text/css" crossorigin="anonymous">
+    <link rel="stylesheet" media="(min-width: 640px) and (max-width: 1024px)" href="/tablet.css" type="text/css" crossorigin="anonymous">
+    <link rel="stylesheet" media="(min-width: 1025px)" href="/desktop.css" type="text/css" crossorigin="anonymous">
+
+    <script defer="defer" src="/runtime.js"></script>
+    <script defer="defer" src="/index.js"></script>
+    <script defer="defer" src="/mobile.js"></script>
+    <script defer="defer" src="/tablet.js"></script>
+    <script defer="defer" src="/desktop.js"></script>
+
+    <link rel="preload" href="/sf-pro-text-light.bcf9c796a4fe849f6a7c.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/notosansthai-regular.4c1bcd74c781837041e9.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/notosansthai-semibold.17e641f9fd67bc9e7264.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/notosans-regular.668fa41f4ecaf0c7ea97.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+</head>
+<body>
+    <header class="site-header">
+        <nav id="site-navigation" class="main-navigation mobile">
+            <div class="nav-bar">
+                <a class="site-brand" href="https://test-c22.pages.dev"><img src="/logo-wh.f88bdcbf0a746bc43cca.svg" alt="prin's stuff logo" fetchpriority="high"></a>
+            </div>
+            <input type="checkbox" class="mobile-nav" id="mobile-nav">
+            <label for="mobile-nav" class="icon-toggle">
+                <div class="spinner diagonal top"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal below"></div>
+            </label>
+            <div id="sidebar-wrap">
+                <?php
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'toggle-menu',
+                            'container' => 'ul',
+                            'menu_class' =>'sidebar-inner'
+                        )
+                    );
+                ?>
+            </div>
+        </nav>
+        <nav id="site-navigation" class="main-navigation desktop">
+            <?php
+                echo '<div class="nav-bar"><a class="site-brand" href="http://localhost/cf"><img src="/wp-content/themes/prinslab-child-cf/dist/logo-wh.f88bdcbf0a746bc43cca.svg" alt="prin stuff logo" fetchpriority="high"></a></div>';
+            ?>
+        </nav>
+    </header>
