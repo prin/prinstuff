@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkprinslab_child_pstuff=self.webpackChunkprinslab_child_pstuff||[]).push([["single"],{},s=>{var e=e=>s(s.s=e);s.O(0,["commons","theme"],(()=>(e(394),e(177),e(224),e(154),e(413))));s.O()}]);
